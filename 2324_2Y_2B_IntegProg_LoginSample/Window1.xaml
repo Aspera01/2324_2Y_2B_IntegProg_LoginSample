@@ -6,7 +6,14 @@
         xmlns:local="clr-namespace:_2324_2Y_2B_IntegProg_LoginSample"
         mc:Ignorable="d"
         Title="Window1" Height="450" Width="800" Closing="Window_Closing">
-    <Grid>
+    <Grid x:Name="window1" Visibility="Collapsed">
+        <Button x:Name="regBtn" Content="Click Here to Register!!!" HorizontalAlignment="Center" FontSize="20" Height="62" Margin="0,252,0,0" VerticalAlignment="Top" Width="230" Click="regBtn_click"/>
+        <Button x:Name="chngBtn" Content="Change Username!!!" HorizontalAlignment="Center" FontSize="20" Height="62" Margin="0,155,0,0" VerticalAlignment="Top" Width="230"/>
+
+    </Grid>
+    <Grid x:Name="changeWin" Visibility="Collapsed">
         
     </Grid>
+
+
 </Window>

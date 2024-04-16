@@ -15,26 +15,18 @@ using System.Windows.Shapes;
 namespace _2324_2Y_2B_IntegProg_LoginSample
 {
     /// <summary>
-    /// Interaction logic for Window1.xaml
+    /// Interaction logic for Window2.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class Window2 : Window
     {
-        public Window1()
+        public Window2()
         {
             InitializeComponent();
         }
-
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            MainWindow mw = new MainWindow();
-            mw.Show();
-        }
-
-        private void regBtn_click(object sender, RoutedEventArgs e)
-        {
-            Window2 ww = new Window2();
-            ww.Show();
-            this.Close();
+            Window1 w = new Window1();
+            w.Show();
         }
     }
 }
